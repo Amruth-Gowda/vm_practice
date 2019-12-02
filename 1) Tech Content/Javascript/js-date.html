@@ -1,0 +1,16 @@
+<html>
+<h1> Javascript Practice </h1>
+<body> 
+<script type="text/javascript">
+	function doSomething(){
+		var now = new Date();
+		var hours = now.getHours();
+		var mins = now.getMinutes();
+		var sec = now.getSeconds();
+		document.write(hours+":"+mins+":"+sec+"<br>");
+	}
+	
+setInterval("doSomething()",1000);
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+BeautifulSoup : helps to get the data from the website and play with it
+
+Requests : helps to send requests and play with the data
+
+urllib: provides interface fetching data across website
+
+NumPy: Standard for storing numerical data
+
+Pandas: data analysis of flatfiles 
+
+DataFrame: pythonic anal
+
+ScikitLearn: popular machine learning package for python 
+
+matplotlib: visualize the data in the form of graphs

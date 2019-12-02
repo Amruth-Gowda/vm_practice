@@ -1,0 +1,25 @@
+<html>
+<h1> Javascript Practice </h1>
+<script type="text/javascript">
+	function Person(name, age){
+		this.name = name;
+		this.age = age;
+		this.yearsLeftUntillRetire = yearsLeft;
+	}
+	
+	function yearsLeft(){
+		var result = 65 - this.age;
+		return result;
+	}
+	
+	var obj1 = new Person("Sushma", 10);
+
+	
+</script>
+
+<body> 
+	<form>
+		<input type="button" value=" click here to know my name" onclick="alert(obj1.yearsLeftUntillRetire()	 + ' \n' + obj1.age)" />  	
+	</form>
+</body>
+</html>
