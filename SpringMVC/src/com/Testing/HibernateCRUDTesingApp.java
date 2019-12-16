@@ -19,7 +19,7 @@ public class HibernateCRUDTesingApp {
 		}
 
 		// insert data into to the database
-		Employee employee = new Employee("navred", "female", "v@m.com", "9898998425");
+		Employee employee = new Employee("navvu", "female", "nav@red.com", "9898978425");
 		dao.addEmployee(employee);
 
 //		// read individual data from the database

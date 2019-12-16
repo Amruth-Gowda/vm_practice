@@ -45,7 +45,6 @@ public class EmployeeDAO {
 		Session session = hibernateUtil.getSession();
 		session.delete(employee);
 		hibernateUtil.commitCloseSession(session);
-
 	}
 
 	public void deleteEmployeesBasedOnPattern(String condition) {

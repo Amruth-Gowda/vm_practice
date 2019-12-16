@@ -9,16 +9,13 @@
 </head>
 <body>
 	<h4>
-		This student is confirmed: ${student.firstName} <br>
-		${student.lastName} <br> Country: ${student.country} <br>
-		Favourite Language: ${student.favouriteLanguage } <br> Operating
-		Systems:<br>
-
+		This student is confirmed: ${student.firstName} ${student.lastName} <br> <hr> 
+		Country: ${student.country} <br> <hr>
+		Favourite Language: ${student.favouriteLanguage } <br> <hr> 
+		Operating Systems: <br>
 		<C:forEach var="temp" items="${student.operatingSystems }">
-			<li><ul>${temp}</ul></li>
+			<li>${temp}</li>
 		</C:forEach>
-
-
 	</h4>
 </body>
 </html>

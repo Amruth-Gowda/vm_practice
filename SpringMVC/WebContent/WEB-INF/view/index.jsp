@@ -7,10 +7,9 @@
 <title> Project home page</title>
 </head>
 <body>
-<h1> Spring MVC web application </h1> <br> <hr>
+<h1> Spring MVC web application </h1> <hr>
 <a href="showForm">Click here to submit the query</a>
-<br>
+<br> <br>
 <a href="student/showForm">Student Portal</a>
-
 </body>
 </html>
