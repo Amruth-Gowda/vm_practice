@@ -1,8 +1,6 @@
-package com.DAOImpl;
+package com.daoimpl;
 
 import java.util.List;
-
-import javax.transaction.Transactional;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -19,14 +17,15 @@ public class CustomerDAOImpl implements CustomerDAO {
 	private SessionFactory sessionFactory;
 	
 	@Override
-	@Transactional
 	public List<Customer> getCustomers() {
-		
 		Session session = sessionFactory.getCurrentSession();
-		
-		List<Customer> customers = session.createQuery("from Customer").getResultList();
-		
+		List<Customer> customers = session.createQuery("from Customer order by custLastname").getResultList();
 		return customers;
 	}
 
+	@Override
+	public void saveCustomer(Customer customer) {
+		Session session =sessionFactory.getCurrentSession();
+		session.save(customer);
+	}
 }

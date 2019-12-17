@@ -72,5 +72,4 @@ public class Customer {
 	public String toString() {
 		return "[" + custId + ", " + custFirstname + ", " + custLastname + ", " + custEmail + "]";
 	}
-
 }
