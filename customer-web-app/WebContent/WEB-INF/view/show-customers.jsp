@@ -19,6 +19,7 @@
 	</div>
 	<div id="container">
 		<div id="content">
+
 			<!-- button to add customers -->
 			<input type="button" value="Add Customer"
 				onclick="window.location.href='showFormToAdd'; return false; "
@@ -28,16 +29,23 @@
 					<th>Firstname</th>
 					<th>Lastname</th>
 					<th>Email</th>
-					<th></th>
-					<th></th>
+					<th>Action</th>
 				</tr>
 				<C:forEach var="tempCustomer" items="${customers}">
+					<!-- update link for the customer -->
+					<C:url var="updateCustomerLink" value="/customer/showUpdateForm">
+						<C:param name="customerId" value="${tempCustomer.custId}"></C:param>
+					</C:url>
+					<!-- delete link for the customer -->
+					<C:url var="deleteCustomerLink" value="/customer/delete">
+						<C:param name="customerId" value="${tempCustomer.custId}"></C:param>
+					</C:url>
 					<tr>
 						<td>${tempCustomer.custFirstname}</td>
 						<td>${tempCustomer.custLastname}</td>
 						<td>${tempCustomer.custEmail}</td>
-						<td><label><a href="">Update</a></label> / <label><a
-								href="">Delete</a></label></td>
+						<td><a href="${updateCustomerLink}">Update</a>| <a
+							href="${deleteCustomerLink}" onclick="if(!(confirm('Are you sure you want to delete this user?'))) return false;">Delete</a></td>
 					</tr>
 				</C:forEach>
 			</table>

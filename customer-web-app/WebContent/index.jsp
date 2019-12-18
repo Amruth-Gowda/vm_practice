@@ -8,8 +8,8 @@
 </head>
 <body>
 <br>
-<h3>Customer web app will be coming soon....</h3>
-<h5><a href="testPage" >Click here to test the page </a></h5>
-<h5><a href="customer/fetchCustomers" >Customer List </a></h5>
+<h3>Customer Web Application</h3>
+<h2><a href="testPage" >Testing page </a></h2>
+<h2><a href="customer/fetchCustomers" >Customer List </a></h2>
 </body>
 </html>

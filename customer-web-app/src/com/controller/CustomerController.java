@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.dto.Customer;
 import com.service.CustomerService;
@@ -35,6 +36,19 @@ public class CustomerController {
 	@RequestMapping("/processForm")
 	public String processForm(@ModelAttribute("customer") Customer customer) {
 		customerService.saveCustomer(customer);
+		return "redirect:/customer/fetchCustomers";
+	}
+
+	@RequestMapping("/showUpdateForm")
+	public String showUpdateForm(@RequestParam("customerId") int id, Model model) {
+		Customer customer = customerService.getCustomer(id);
+		model.addAttribute("customer", customer);
+		return "add-customer";
+	}
+	
+	@RequestMapping("/delete")
+	public String deleteCustomer(@RequestParam("customerId")int id) {
+		customerService.deleteCustomer(id);
 		return "redirect:/customer/fetchCustomers";
 	}
 }

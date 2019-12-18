@@ -21,6 +21,7 @@
 	<div id="container">
 		<form:form action="processForm" method="post"
 			modelAttribute="customer">
+			<form:hidden path="custId"/>
 			<table>
 				<tbody>
 					<tr>
