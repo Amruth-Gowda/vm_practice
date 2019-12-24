@@ -1,6 +1,7 @@
 package com.controller;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,12 +16,14 @@ import com.service.CustomerService;
 @Controller
 @RequestMapping("/customer")
 public class CustomerController {
-
+	private Logger logger = Logger.getLogger(getClass().getName()); 
+	
 	@Autowired
 	private CustomerService customerService;
 
 	@RequestMapping("/fetchCustomers")
 	public String showCustomers(Model model) {
+		logger.info("Customer-Web-App: Fetching customer list....");
 		List<Customer> customers = customerService.getCustomers();
 		model.addAttribute("customers", customers);
 		return "show-customers";

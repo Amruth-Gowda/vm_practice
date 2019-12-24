@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Customer Web App</title>
+<title>Kalinga Web App</title>
 </head>
 <body>
 <br>
-<h3>Customer Web Application</h3>
+<h3>Kalinga's Web Application</h3>
 <h2><a href="testPage" >Testing page </a></h2>
 <h2><a href="customer/fetchCustomers" >Customer List </a></h2>
 </body>

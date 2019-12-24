@@ -14,7 +14,7 @@
 	<h2></h2>
 	<div id="wrapper">
 		<div id="header">
-			<h2>Customer Web Application</h2>
+			<h2>Kalinga Web Application</h2>
 		</div>
 	</div>
 	<div id="container">

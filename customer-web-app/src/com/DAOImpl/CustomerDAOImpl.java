@@ -13,7 +13,7 @@ import com.dto.Customer;
 
 @Repository
 public class CustomerDAOImpl implements CustomerDAO {
-
+	
 	@Autowired
 	private SessionFactory sessionFactory;
 
