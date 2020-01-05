@@ -21,8 +21,7 @@ public class AspectLogging {
 	private void beforeExec() {}
 
 	@Pointcut("execution(* com.*.*.*(..))")
-	private void afterExec() {
-	}
+	private void afterExec() {}
 
 	// declare before advice
 	@Before("beforeExec()")
@@ -38,5 +37,4 @@ public class AspectLogging {
 		logger.info("Executing after the method: " + methodName);
 		logger.info("The obtained result: "+result);
 	}
-
 }
