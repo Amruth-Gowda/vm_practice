@@ -1,0 +1,3 @@
+Crm:
+	- It's a maven project 
+	- It's Spring MVC, AOP, REST API, Hibernate project
