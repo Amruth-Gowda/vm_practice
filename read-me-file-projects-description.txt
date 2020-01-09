@@ -1,3 +1,30 @@
-Crm:
-	- It's a maven project 
-	- It's Spring MVC, AOP, REST API, Hibernate project
+Crm working code:
+	- A maven project 
+	- Spring MVC
+	- Hibernate 
+	- Spring AOP
+	- logger
+	- REST API
+	
+	
+customer-web-app working code:
+	- A dynamic web application
+	- spring mvc 
+	- hibernate
+	- logger
+	- spring aop
+	
+HelloWorld working code:
+	- A java project
+	- basic jdbc connection test
+	- lambdas
+	
+MasterJavaProject:
+	- A java project
+	- lists
+	- sets
+	- threads
+
+SpringMVC working code:
+	- Udemy practice code
+	
