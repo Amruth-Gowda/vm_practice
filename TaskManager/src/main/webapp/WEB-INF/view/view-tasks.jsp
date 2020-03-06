@@ -1,14 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>View Tasks</title>
+<title>Task Manager Application</title>
 </head>
 <body>
-<h2>Task Manager Application</h2><br>
-Viewing module coming soon.... <br><br>
-<a href="home">back to home</a>
+	<h1>Task Manager Application</h1>
+	<h4>Task Details</h4>
+		<h6> Task Details coming soon.....</h6>
+	<a href="home">back to home</a>
 </body>
 </html>

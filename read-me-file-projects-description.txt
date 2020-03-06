@@ -1,4 +1,12 @@
-Crm working code:
+Basics code:
+	- Java basics different concepts like
+	- Stream api
+	- Date Api
+	- Functional Api
+	- Intializer blocks
+	- Lambdas
+
+Crm code:
 	- A maven project 
 	- Spring MVC
 	- Hibernate 
@@ -6,15 +14,14 @@ Crm working code:
 	- logger
 	- REST API
 	
-	
-customer-web-app working code:
+customer-web-app code:
 	- A dynamic web application
 	- spring mvc 
 	- hibernate
 	- logger
 	- spring aop
 	
-HelloWorld working code:
+HelloWorld code:
 	- A java project
 	- basic jdbc connection test
 	- lambdas
@@ -27,4 +34,14 @@ MasterJavaProject:
 
 SpringMVC working code:
 	- Udemy practice code
+
+TaskManager code:
+ 	- Simple Spring MVC Maven app
+	- button clicking to call controller
+	- back button to home controller 
+	- Hibernate mapping java annotation
+		- one to many mapping
+	- Jquery practice code
+
+
 	

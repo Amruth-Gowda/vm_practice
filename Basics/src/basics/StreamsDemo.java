@@ -10,7 +10,10 @@ public class StreamsDemo {
 		for (int i = 0; i < 50; i++) {
 			sampleList.add(i);
 		}
-		sampleList.stream().filter(s -> (s % 2 == 0)).filter(s -> (s % 5 == 0)).forEach(System.out::println);
+		sampleList.stream()
+		.filter(s -> (s % 2 == 0))
+		.filter(s -> (s % 5 == 0))
+		.forEach(System.out::println);
 	}
 
 }
